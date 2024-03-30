@@ -1,0 +1,45 @@
+@use '../../../sass/variables' as *;
+@use '../../../sass/mixin' as *;
+
+.edit_task {
+    @include edit-delete;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .editing_task {
+        @include secondary-font;
+        color: black;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .editing_task_description {
+    @include tertiary-font;
+    color: black;
+    text-align: center;
+    }
+
+    .confirm_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .negative_button {
+        @include button-no;
+        margin-left: 20px;
+    }
+
+    .afirmative_button {
+        @include button-yes;
+        margin-left: 20px;
+    }
+}
+

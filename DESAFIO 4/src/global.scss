@@ -1,0 +1,18 @@
+@use './sass/variables' as *;
+
+:root {
+    margin: 0px;
+    padding: 0px;
+    background-color: $primary-color;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+p {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}

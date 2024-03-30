@@ -1,0 +1,78 @@
+//Para usar nos components, importar @use 'pasta do mixin'as *;
+// @include nome do mixin
+
+@use './variables' as *;
+
+@mixin button-yes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0em;
+    background-color: $white;
+    color: $primary-color;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 268px;
+    height: 77px;
+}
+
+@mixin button-no {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0em;
+    background-color: $secondary-color;
+    color: $white;
+    border-radius: 10px;
+    border: 0px;
+    width: 268px;
+    height: 77px;
+    cursor: pointer;
+}
+
+@mixin primary-font {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+
+@mixin secondary-font {
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: $white;
+}
+
+@mixin tertiary-font {
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $white;
+}
+
+@mixin edit-delete {
+    text-align: center;
+    width: 758px;
+    height: 436px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: $white;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}

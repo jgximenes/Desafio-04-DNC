@@ -1,0 +1,18 @@
+@use '../../../sass/variables' as *;
+@use '../../../sass/mixin' as *;
+
+.add_task {
+    @include tertiary-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-style: italic;
+
+    table {
+        width: 55%;
+        text-align: center;
+        table-layout: fixed;
+    }
+
+}

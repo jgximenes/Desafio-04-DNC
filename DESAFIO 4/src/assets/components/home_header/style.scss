@@ -1,0 +1,32 @@
+@use '../../../sass/variables' as *;
+@use '../../../sass/mixin' as *;
+
+.header {
+    display: flex;
+    background-color: $secondary-color;
+    height: 74px;
+    align-items: end;
+
+    .organizacao-header {
+        display: flex;
+        color: $white;
+        margin-left: 60px;
+        @include primary-font;
+        width: 174px;
+        height: 54px;
+        align-items: center;
+    }
+
+    .tarefas-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        color: $secondary-color;
+        @include primary-font;
+        margin-left: 40px;
+        width: 174px;
+        height: 54px;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
